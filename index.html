@@ -9,18 +9,19 @@
     <script src="https://kit.fontawesome.com/76e513ada2.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <section class="w-full h-screen font-LeBelle bg-color-one flex overflow-hidden">
+    <section class="w-full h-screen rounded-lg font-LeBelle  flex overflow-hidden">
       <div class="mx-auto my-auto">
-        <h1 class="font-normal text-color-two text-[64px] animate-fadeLeft">Happy</h1>
-        <h1 class="font-normal text-color-two text-[64px] animate-fadeRight">Birthday</h1>
+        <h1 class="font-normal text-color-one text-[64px] animate-fadeLeft">Happy</h1>
+        <h1 class="font-normal text-color-one text-[64px] animate-fadeRight">Birthday</h1>
       </div>
     </section>
 
-    <section class="w-full bg-color-three flex font-Poppins">
+    <section class="w-full bg-color-three flex font-Poppins rounded-lg">
         <div class="p-5 mx-auto flex flex-col gap-5 overflow-hidden ">
-            <div class="flex" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="" data-aos="zoom-in" data-aos-duration="1500">
                 <!-- <img class="w-[320px] mx-auto" src="/assets/images/hbd-cal.png" alt="icon hbd"> -->
-                <p class="text-4xl mx-auto">❤️</p>
+                <h2 class="text-4xl font-LeBelle">Happy</h2>
+                <p>21 years my girl.</p>
             </div>
             <div class="w-full bg-white rounded-[16px] px-6 py-5 grid grid-cols-1 gap-5 border-b-8 border-slate-600" data-aos="zoom-out" data-aos-duration="1500">
                 <h1 class="font-medium text-[20px]">December</h1>
@@ -67,7 +68,7 @@
                     <p>31</p>
                 </div>
             </div>
-            <div class="w-full bg-white p-5 rounded-[16px] border-b-8 border-slate-600 " data-aos="zoom-in-up" data-aos-duration="1500">
+            <div class="w-full bg-white p-5 rounded-[16px] border-b-8 border-slate-600 " data-aos="zoom-out" data-aos-duration="1500">
                 <p>
                     Tanpa ada perayaan pun ulang tahun akan tetap 
                     terasa istimewa dengan sendirinya. 
@@ -80,22 +81,39 @@
         </div>
     </section>
 
-    <section class="w-full bg-color-three font-Poppins px-6 py-5 grid grid-cols-1 gap-5">
+    <section class="w-full font-Poppins px-6 py-5 grid grid-cols-1 gap-5">
       <div class="grid grid-cols-1 gap-5">
-        <p class="text-center text-lg text-slate-500">Cantik nih💕</p>
+        <p class="text-center text-md text-color-one">Cantik nih💕</p>
         <i class="fa-solid fa-square-caret-down text-4xl text-center text-color-two"></i>
         <img class="rounded-[16px] border-b-8 border-slate-600" src="/assets/images/love1.jpg" alt="image love" data-aos="fade-in" data-aos-duration="1500">
       </div>
       <div class="grid grid-cols-1 gap-5">
-        <p class="text-center text-lg text-slate-500">Ini juga Cantik boy💕❤️</p>
+        <p class="text-center text-md text-color-one">Ini juga Cantik boy💕❤️</p>
         <i class="fa-solid fa-square-caret-down text-4xl text-center text-color-two"></i>
         <img class="rounded-[16px] border-b-8 border-slate-600" src="/assets/images/love2.jpg" alt="image love" data-aos="fade-in" data-aos-duration="1500">
       </div>
+      <div class="">
+        <p class="text-center text-color-one text-md"> <span class="font-LeBelle text-4xl">Wish</span> you all the best honey💕</p>
+      </div>
     </section>
+
+    <footer class="w-full py-5 bg-color-one">
+      <p class="text-center text-white">Created with ❤️ by Bintang Santosa</p>
+    </footer>
+
+    <div class="p-4 bg-color-one rounded-br-[24px] fixed left-0 bottom-5">
+      <i id="btnAudioPlayer" class="fa-solid fa-circle-pause text-white text-3xl cursor-pointer"></i>
+    </div>
+
+    <audio id="audioPlayer" class="hidden" controls>
+      <source src="/assets/music/music.mp3" type="audio/mp3">
+    </audio>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
