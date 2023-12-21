@@ -14,8 +14,6 @@ function playSong() {
   audioPlayer.play();
 }
 
-playSong();
-
 // Fungsi untuk menghentikan lagu
 function stopSong() {
   audioPlayer.pause();
